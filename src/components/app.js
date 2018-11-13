@@ -1,9 +1,18 @@
-import React, { Component } from 'react';
+import React from 'react';
+import BookList from '../containers/book_list';
 
-export default class App extends Component {
-  render() {
-    return (
-      <div>React simple starter</div>
-    );
-  }
+
+class App extends React.Component {
+	constructor(props){ 
+		super(props);
+	}
+
+	render(){
+		return <div>
+			<h1>BOOK-SHELF</h1>
+			<BookList/>
+		</div>
+	}
 }
+
+export default App;
